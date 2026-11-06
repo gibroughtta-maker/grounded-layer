@@ -2,11 +2,11 @@
 
 **A review-and-receipt protocol for AI agents that take real actions.**
 
-[![CI](https://github.com/sheldon010507-collab/grounded-layer/actions/workflows/ci.yml/badge.svg)](https://github.com/sheldon010507-collab/grounded-layer/actions/workflows/ci.yml)
+[![CI](https://github.com/gibroughtta-maker/grounded-layer/actions/workflows/ci.yml/badge.svg)](https://github.com/gibroughtta-maker/grounded-layer/actions/workflows/ci.yml)
 [![Status](https://img.shields.io/badge/status-beta-orange.svg)](#project-status)
 [![Code license](https://img.shields.io/badge/code-Apache--2.0-blue.svg)](LICENSE)
 
-**[Open the live playground](https://sheldon010507-collab.github.io/grounded-layer/)** · **[Browse preview releases](https://github.com/sheldon010507-collab/grounded-layer/releases)**
+**[Open the live playground](https://gibroughtta-maker.github.io/grounded-layer/)** · **[Browse preview releases](https://github.com/gibroughtta-maker/grounded-layer/releases)**
 
 When an agent is connected to email, orders, bookings, payments, or any other external system, a chat transcript is not enough. The user needs to see the exact action before it runs. The application needs a machine-readable record of what happened afterward.
 
@@ -53,14 +53,14 @@ This is especially useful when non-technical users work across different models 
 
 ## Try it now
 
-The fastest way to understand Grounded Layer is the [live playground](https://sheldon010507-collab.github.io/grounded-layer/). It is a static, fixture-only demo: no server, MCP connection, credentials, or real tool execution is involved.
+The fastest way to understand Grounded Layer is the [live playground](https://gibroughtta-maker.github.io/grounded-layer/). It is a static, fixture-only demo: no server, MCP connection, credentials, or real tool execution is involved.
 
 To run the same playground locally:
 
 Requirements: Node.js 22.13+ and pnpm 11.5.2.
 
 ```bash
-git clone https://github.com/sheldon010507-collab/grounded-layer.git
+git clone https://github.com/gibroughtta-maker/grounded-layer.git
 cd grounded-layer
 pnpm install
 pnpm build
@@ -116,6 +116,10 @@ The npm distribution is intentionally deferred until there is a concrete need fo
 
 ## License
 
-Code is licensed under [Apache-2.0](LICENSE). The protocol specification in [`docs/spec/`](docs/spec/) is licensed under [CC BY 4.0](docs/spec/LICENSE). Grounded Layer and related names are trademarks of their respective owner; see [TRADEMARK.md](TRADEMARK.md).
+Code is licensed under [Apache-2.0](LICENSE). The protocol schemas in [`packages/protocol/schemas/`](packages/protocol/schemas/) are licensed under [CC BY 4.0](docs/spec/LICENSE). Grounded Layer and related names are trademarks of their respective owner; see [TRADEMARK.md](TRADEMARK.md).
 
 If you are building an agent that can change something outside the chat window, Grounded Layer gives that action a place to be reviewed—and its outcome a place to be recorded.
+
+## Author
+
+Designed and built by **Dong Wang** — protocol design, TypeScript packages, React renderer, conformance checks and the private reference runtime (`grounded-layer-core`).
